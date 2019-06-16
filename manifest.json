@@ -1,0 +1,28 @@
+{
+    "name": "Reddit Link Counter",
+    "version": "1.0",
+    "description": "Creates toolbar badge that holds a count of Reddit links visited",
+    "permissions": [
+        "storage",
+        "declarativeContent",
+        "activeTab",
+        "webNavigation"
+    ],
+    "background": {
+        "scripts": [
+            "backgroundInitialize.js",
+            "backgroundIncrement.js"
+        ],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/reddit-favicon.png"
+        }
+    },
+    "icons": {
+        "16": "images/reddit-favicon.png"
+    },
+    "manifest_version": 2
+}
