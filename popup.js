@@ -9,7 +9,5 @@ chrome.storage.sync.get(['history'], (data) => {
 
 setHistory.onclick = () => {
     let days = historyValue.value;
-    chrome.storage.sync.set({ history: days }, () => {
-        console.log(days);
-    });
+    chrome.storage.sync.set({ history: days });
 };
