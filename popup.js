@@ -1,17 +1,21 @@
 'use strict';
 
-let changeColor = document.getElementById('changeColor');
+document.addEventListener('DOMContentLoaded', () => {
+    main();
+    document.getElementById('setHistory').addEventListener('click', eventHandler);
+})
 
-chrome.storage.sync.get('color', function (data) {
-    changeColor.style.backgroundColor = data.color;
-    changeColor.setAttribute('value', data.color);
-});
-
-changeColor.onclick = function (element) {
-    let color = element.target.value;
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-        chrome.tabs.executeScript(
-            tabs[0].id,
-            { code: 'document.body.style.backgroundColor = "' + color + '";' });
+const main = () => {
+    chrome.storage.sync.get(['history'], (data) => {
+        document.getElementById('historyValue').setAttribute('value', data.history);
     });
+};
+
+const eventHandler = (e) => {
+    let days = document.getElementById('historyValue').value;
+    console.log(days);
+    console.log("hello world");
+    // chrome.storage.sync.set({ history: days }, () => {
+    //     console.log(days);
+    // });
 };
