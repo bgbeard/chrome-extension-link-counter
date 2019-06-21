@@ -1,9 +1,7 @@
 'use strict';
-chrome.runtime.onInstalled.addListener(function () {
-    chrome.storage.sync.set({ linkCount: '0' }, function () {
-        chrome.storage.sync.get('linkCount', function (data) {
-            console.log(data);
-        });
-    });
 
+chrome.runtime.onInstalled.addListener(() => {
+    chrome.storage.sync.set({ history: 7 }, () => {
+        console.log(`Current history set to 7 days.`);
+    });
 });
