@@ -1,21 +1,13 @@
 'use strict';
 
-document.addEventListener('DOMContentLoaded', () => {
-    main();
-    document.getElementById('setHistory').addEventListener('click', eventHandler);
-})
+let historyValue = document.getElementById('historyValue');
+let setHistory = document.getElementById('setHistory');
 
-const main = () => {
-    chrome.storage.sync.get(['history'], (data) => {
-        document.getElementById('historyValue').setAttribute('value', data.history);
-    });
-};
+chrome.storage.sync.get(['history'], (data) => {
+    historyValue.setAttribute('value', data.history);
+});
 
-const eventHandler = (e) => {
-    let days = document.getElementById('historyValue').value;
-    console.log(days);
-    console.log("hello world");
-    // chrome.storage.sync.set({ history: days }, () => {
-    //     console.log(days);
-    // });
+setHistory.onclick = () => {
+    let days = historyValue.value;
+    chrome.storage.sync.set({ history: days });
 };

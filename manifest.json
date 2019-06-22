@@ -1,7 +1,7 @@
 {
-    "name": "Reddit Link Counter",
-    "version": "1.0",
-    "description": "Creates toolbar badge that holds a count of Reddit links visited",
+    "name": "Link Counter",
+    "version": "0.0.0.1",
+    "description": "Displays a count of links visited on current domain. Default days of history included can be changed by clicking the toolbar icon.",
     "permissions": [
         "storage",
         "history"
@@ -16,7 +16,7 @@
     "browser_action": {
         "default_popup": "popup.html",
         "default_icon": {
-            "16": "images/passport.png"
+            "24": "images/passport.png"
         }
     },
     "manifest_version": 2
