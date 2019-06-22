@@ -1,6 +1,6 @@
 {
     "name": "Link Counter",
-    "version": "1.0",
+    "version": "0.0.0.1",
     "description": "Displays a count of links visited on current domain. Default days of history included can be changed by clicking the toolbar icon.",
     "permissions": [
         "storage",
