@@ -2,34 +2,25 @@
 <html>
 
 <head>
-    <style>
-        input {
-            /* height: 30px; */
-            width: 30px;
-        }
-
-        /* button {
-            height: 30px;
-            width: 70px;
-            outline: none;
-        } */
-
-        div {
-            /* width: 80px;
-            height: 50px; */
-            align-items: center;
-            align-content: space-around;
-            display: flex;
-            background-color: lightseagreen;
-            border: 5px black;
-        }
-    </style>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div class="body">
-        <input type="number" id="historyValue"></input>
-        <button type="button" id="setHistory">Set History</button>
+    <div id="container">
+        <h1>I-Browse Removal</h1>
+        <!-- <div class="section">
+            <p id="totalLinks">Total links: </p>
+        </div> -->
+        <div class="section history">
+            <p>Select history start</p>
+            <input type="number" id="historyValue"></input>
+            <button type="button" id="setHistory">Set History</button>
+        </div>
+        <div class="section delay">
+            <p>Delay Mode</p>
+            <!-- add onHover that shows explanation of delay mode -->
+            <input type="checkbox">
+        </div>
     </div>
     <script src="popup.js"></script>
 </body>
