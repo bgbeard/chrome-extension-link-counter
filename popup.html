@@ -2,36 +2,26 @@
 <html>
 
 <head>
-    <style>
-        input {
-            /* height: 30px; */
-            width: 30px;
-        }
-
-        /* button {
-            height: 30px;
-            width: 70px;
-            outline: none;
-        } */
-
-        div {
-            /* width: 80px;
-            height: 50px; */
-            align-items: center;
-            align-content: space-around;
-            display: flex;
-            background-color: lightseagreen;
-            border: 5px black;
-        }
-    </style>
+    <link href="popup.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div class="body">
-        <input type="number" id="historyValue"></input>
-        <button type="button" id="setHistory">Set History</button>
+    <div id="container">
+
+        <div id="main">
+            <ul>
+                <li class="menuItem">
+                    <a id="setHistory">Reset History</a>
+                </li>
+                <li class="menuItem">
+                    <label>Delay Mode</label>
+                    <input id="delayMode" type="checkbox">
+                </li>
+            </ul>
+
+        </div>
+        <script src="popup.js"></script>
     </div>
-    <script src="popup.js"></script>
 </body>
 
 </html>

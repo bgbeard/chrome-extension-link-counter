@@ -1,0 +1,53 @@
+.menuItem {
+    line-height: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #000;
+    overflow-y: visible;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    border: 1px solid rgb(177, 165, 159);
+}
+
+#main {
+    border: 1px solid #CACACA;
+    box-sizing: border-box;
+    font-size: 14px;
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    height: auto;
+    width: 150px;
+    background-color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#container {
+    border: 1px solid #CACACA;
+    box-sizing: border-box;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+div {
+    display: block;
+}

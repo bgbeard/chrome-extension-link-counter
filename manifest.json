@@ -4,14 +4,18 @@
     "description": "Displays a count of links visited on current domain. Default days of history included can be changed by clicking the toolbar icon.",
     "permissions": [
         "storage",
-        "history"
+        "history",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
     ],
     "background": {
         "scripts": [
-            "background.js",
-            "backgroundInitialize.js"
+            "/backgrounds/initialize.js",
+            "/backgrounds/badge.js",
+            "/backgrounds/delay.js"
         ],
-        "persistent": false
+        "persistent": true
     },
     "browser_action": {
         "default_popup": "popup.html",

@@ -3,7 +3,7 @@
 chrome.history.onVisited.addListener((historyItem) => {
     let hostname = new URL(historyItem.url).hostname;
     chrome.storage.sync.get(['history'], (data) => {
-        let searchQuery = { text: hostname, startTime: getDate(data.history), maxResults: 1000 };
+        let searchQuery = { text: hostname, startTime: data.history, maxResults: 1000 };
         chrome.history.search(searchQuery, (historyItems) => {
             chrome.browserAction.setBadgeText({ text: historyItems.length.toString() });
         });
