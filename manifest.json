@@ -1,15 +1,18 @@
 {
     "name": "Link Counter",
-    "version": "0.0.0.4",
-    "description": "Displays a count of pages visited on current domain. Optionally introduces 100ms delay to all web requests.",
+    "version": "0.0.0.5",
+    "description": "Displays a count of pages visited on current domain. Optionally introduces a 200ms delay to all page navigation.",
     "permissions": [
         "storage",
-        "history"
+        "history",
+        "activeTab",
+        "http://*/*",
+        "https://*/*"
     ],
     "background": {
         "scripts": [
             "/backgrounds/initialize.js",
-            "/backgrounds/badge.js"
+            "/backgrounds/main.js"
         ],
         "persistent": false
     },
