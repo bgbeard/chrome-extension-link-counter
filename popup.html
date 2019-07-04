@@ -2,27 +2,26 @@
 <html>
 
 <head>
-    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="popup.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div id="container">
-        <h1>I-Browse Removal</h1>
-        <!-- <div class="section">
-            <p id="totalLinks">Total links: </p>
-        </div> -->
-        <div class="section history">
-            <p>Select history start</p>
-            <input type="number" id="historyValue"></input>
-            <button type="button" id="setHistory">Set History</button>
+
+        <div id="main">
+            <ul>
+                <li class="menuItem">
+                    <a id="setHistory">Reset History</a>
+                </li>
+                <li class="menuItem">
+                    <label>Delay Mode</label>
+                    <input id="delayMode" type="checkbox">
+                </li>
+            </ul>
+
         </div>
-        <div class="section delay">
-            <p>Delay Mode</p>
-            <!-- add onHover that shows explanation of delay mode -->
-            <input type="checkbox">
-        </div>
+        <script src="popup.js"></script>
     </div>
-    <script src="popup.js"></script>
 </body>
 
 </html>

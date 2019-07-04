@@ -1,15 +1,16 @@
 'use strict';
 
-let historyValue = document.getElementById('historyValue');
 let setHistory = document.getElementById('setHistory');
-let totalLinks = document.getElementById('totalLinks');
-
-chrome.storage.sync.get(['history', 'startHistory'], (data) => {
-    historyValue.setAttribute('value', data.history);
-});
+let delayMode = document.getElementById('delayMode');
 
 setHistory.onclick = () => {
-    let days = historyValue.value;
-    chrome.storage.sync.set({ history: days });
+    chrome.storage.sync.set({ history: new Date().getTime() });
 };
 
+delayMode.onchange = () => {
+    if (delayMode.checked) {
+        chrome.storage.sync.set({ delayMode: true })
+    } else {
+        chrome.storage.sync.set({ delayMode: false })
+    }
+}

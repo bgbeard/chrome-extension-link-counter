@@ -2,6 +2,7 @@
 
 chrome.runtime.onInstalled.addListener(() => {
     chrome.storage.sync.set({
-        history: 7,
+        history: new Date().getTime(),
+        delayMode: false
     }, undefined);
 });
