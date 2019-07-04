@@ -2,8 +2,8 @@
 
 https://chrome.google.com/webstore/detail/link-counter/pgmecgbodgbbimifehibeojmehopiega
 
-The purpose of this chrome extension is to help track website usage. I found myself wasting too much time on Reddit and other social media websites, so I made this as a visual reminder of how much attention I was spending.
+In an effort to prevent technology from distracting me from my life, I have made this extension to disrupt the addictive nature of web browsing. As of the current release, there are two features to support spending less time on the internet. 
 
-This extension creates a toolbar icon with a count of how many times you have visited web pages under the domain you are currently on. For example, if you visit pinterest.com, it will show a count of ALL Pinterest pages visited. If you navigate to facebook.com, it will display a count of all pages visited under Facebook.
+The first is a counter that tracks how many pages have been visited on the current domain. For example, while on any page of www.reddit.com, a badge on the toolbar icon will show a count of how many links have been navigated under reddit. If I move to www.pinterest.com, the badge will update to reflect pages visited under pinterest. Any time you would like to reset the clock for tracking links, simply click 'Reset History' from the toolbar menu. This is a great way to maintain awareness of browsing activity, similar to other apps that track screen time.
 
-The default timespan for showing page view counts is 7 days. The toolbar icon contains a dropdown for changing this default. 
+The second feature is turned off by default. By selecting the checkbox for 'Delay Mode' under the toolbar menu, a 100 millisecond delay is added to all web requests to simulate a minor network slowdown. By adding a modicum of frustration to the browsing experience, my hope is that browsing your favorite time wasters will feel slightly less addictive.
