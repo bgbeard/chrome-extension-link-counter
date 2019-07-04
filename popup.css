@@ -51,3 +51,7 @@ body {
 div {
     display: block;
 }
+
+.disabled {
+    text-decoration: line-through;
+}

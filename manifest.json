@@ -1,21 +1,17 @@
 {
     "name": "Link Counter",
-    "version": "0.0.0.1",
-    "description": "Displays a count of links visited on current domain. Default days of history included can be changed by clicking the toolbar icon.",
+    "version": "0.0.0.4",
+    "description": "Displays a count of pages visited on current domain. Optionally introduces 100ms delay to all web requests.",
     "permissions": [
         "storage",
-        "history",
-        "webRequest",
-        "webRequestBlocking",
-        "<all_urls>"
+        "history"
     ],
     "background": {
         "scripts": [
             "/backgrounds/initialize.js",
-            "/backgrounds/badge.js",
-            "/backgrounds/delay.js"
+            "/backgrounds/badge.js"
         ],
-        "persistent": true
+        "persistent": false
     },
     "browser_action": {
         "default_popup": "popup.html",
